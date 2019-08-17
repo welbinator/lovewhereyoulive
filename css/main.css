@@ -47,6 +47,42 @@ $black			: #222;
 /* ====================================*/
 /* My Code */
 /*=====================================*/
+.displayNone {
+  display: none;
+}
+#slideshow { 
+  /* background: red; */
+ height: 500px;
+ width: 500px;
+ position: relative; 
+}
+
+#slideshow > div { 
+position: absolute; 
+top: 10px; 
+left: 10px; 
+right: 10px; 
+bottom: 10px; 
+}
+#slideshow > div > img {
+width: 500px;
+}
+div#slideshow div {
+ display: flex;
+ justify-content: center;
+ align-items: flex-end;
+}
+div#slideshow h3 {
+background-image: linear-gradient(to right, #499FFF, #0589FF);
+ text-align: center;
+ /* margin-top: -27px; */
+ width: 80%;
+ /* margin: -50px auto 0 auto; */
+ /* z-index: 999999; */
+ position: absolute;
+ color: white;
+ padding: 10px;
+}
 
 .email {
     width: 413px;
@@ -80,61 +116,6 @@ border: white;
 .subscribe h3 {
   margin: 5px;
 }
-
-/* .slider {
-  display: none;
-} */
- div#carousel {
-  background-image: url('file:///media/fuse/crostini_31c90d513c998dabdc0840f74e37405d5c9f3801_termina_penguin/lovewhereyoulive/img/carousel-background.png');
-  background-size: cover;
-}
-
-div#carousel>figure {
-  transition: all 1.5s ease;
-  -webkit-transition: all 1.5s ease;
-  -moz-transition: all 1.5s ease;
-  }
-
-
-div#carousel>figure.hidden {
-display: none;
-opacity: 0;
-margin: 0px;
-
-}
-
-div#carousel>figure.visible {
-/* display: block; */
-/* opacity: 1; */
-overflow: hidden;
-position: relative;
-margin: 0px auto;
-
-}
-
-
-
-
-#carousel>figure>figcaption {
-  position: absolute;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5em;
-bottom: 20px;
-color: white;
-text-align: center;
-width: 60%;
-left: 20%;
-background: #4f9eff;
-padding: 20px;
-}
-
-#carousel>figure>img {
-  overflow: hidden;
-  position: relative;
-  margin: 0px auto;
-}
-
 .services-area p {
   font-size: 19px;
 line-height: 27px;
@@ -191,7 +172,7 @@ line-height: 27px;
 body {
   color: #777777;
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.625em;
   position: relative;
