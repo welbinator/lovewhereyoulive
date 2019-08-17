@@ -109,21 +109,82 @@
 
 						<div class="col-lg-6 col-md-6 banner-left d-flex">
 
-yo
-				<div id="carousel">
+
+				<!-- <div id="carousel" data-ride="carousel" data-interval="9000">
 						<figure class="visible">
-							<img class="img-fluid" src="img/gwen-hero.png">
+							<img class="img-fluid" src="img/gwen.png">
 							<figcaption>Here's a quote from Gwen. </figcaption>
 						</figure>
 						<figure class="hidden">
-							<img class="img-fluid" src="img/steve-hero.png" alt="">
+							<img class="img-fluid" src="img/steve.png" alt="">
 							<figcaption>Here's a quote from Steve.</figcaption>
 						</figure>
-						<!-- <figure class="hidden">
-							<img src="img/nature.png" alt=" Nature">
-							<figcaption> Hurricane Threatens to Touch Down on the East Coast This Weekend</figcaption>
-						</figure> -->
-				</div>
+						
+				</div> -->
+
+				<div id="slideshow">
+					<div>
+					  <img src="img/gwen.png">
+					  <h3>Here's a quote from Gwen</h3>
+					</div>
+					<div>
+					  <img src="img/steve.png">
+					  <h3>Here's a quote from Steve</h3>
+					</div>
+					
+				 </div>
+
+<style>
+#slideshow { 
+     /* background: red; */
+    height: 500px;
+    width: 500px;
+    position: relative; 
+}
+
+#slideshow > div { 
+position: absolute; 
+top: 10px; 
+left: 10px; 
+right: 10px; 
+bottom: 10px; 
+}
+#slideshow > div > img {
+	width: 500px;
+}
+div#slideshow div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+div#slideshow h3 {
+   background-image: linear-gradient(to right, #499FFF, #0589FF);
+    text-align: center;
+    /* margin-top: -27px; */
+    width: 80%;
+    /* margin: -50px auto 0 auto; */
+    /* z-index: 999999; */
+    position: absolute;
+    color: white;
+    padding: 10px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  9000);
+</script>
+
+				
 
 
 
