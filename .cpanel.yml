@@ -2,5 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/lovewhereyoulive/public_html/
-    - /bin/cp * $DEPLOYPATH
-    - /bin/cp img $DEPLOYPATH
+    - /bin/cp -R * $DEPLOYPATH
