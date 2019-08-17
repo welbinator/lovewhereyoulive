@@ -8,5 +8,7 @@
 		"path": "/home/jameswelbes/jwdigital-1"
 	}
 ],
-  "settings": {}
+"settings": {
+	"liveServer.settings.multiRootWorkspaceName": "lovewhereyoulive-1"
+}
 }
