@@ -24,6 +24,9 @@
 @import "theme/footer";
 
 // My Stuff
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-size: 18px;
 }

@@ -4411,6 +4411,10 @@ dl.accordion.time-line:before {
 }
 
 /*-------- end footer Area -------------*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 18px;
 }
